@@ -9,7 +9,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 // 회원가입 화면으로부터 넘어오는 가입정보
-@Getter @Setter
+@Getter
+@Setter
 public class MemberFormDto {
     
     @NotBlank(message = "이름은 필수 입력 값입니다.")

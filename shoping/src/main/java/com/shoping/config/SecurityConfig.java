@@ -33,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutSuccessUrl("/"); // 로그아웃 성공 시 이동할 url
 
         http.authorizeRequests()
-                .mvcMatchers("/", "/members/**").permitAll()
+                .mvcMatchers("/", "/members/**","/item/**", "/images/**").permitAll()
                 .mvcMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated();
 

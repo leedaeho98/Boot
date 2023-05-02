@@ -12,8 +12,7 @@ import javax.persistence.*;
 // 회원정보를 저장하는 테이블
 @Entity @Table(name = "member")
 @Getter @Setter @ToString
-
-public class Member {
+public class Member extends BaseEntity{
     @Id
     @Column(name="member_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
